@@ -15,7 +15,18 @@ Code must be writted in Javascript language. The code will be tested with Node8,
 ```
 Answer:
 ```
--- insert your answer here
+function shift(list,side,num){
+  let ans = [];
+
+  if(side != "right" && side != "left") return "wrong side";
+  num %= list.length;
+  if(side == "right") num = list.length - num;
+  for(let i = 0 ; i<num ; i++){
+    list.push(list.shift());
+    
+  }
+  return list;
+}
 ```
 2. Download [hero.json](https://github.com/takemetour/job-quest-intern-2018/blob/master/hero.json) and write a code to caculate these values from **hero.json**
 - 2.1 Average **networth** of all heroes
@@ -25,7 +36,38 @@ Answer:
 
 Answer:
 ```
--- insert your answer here
+let hero = require('./hero.json');
+
+let total = 0;
+
+let intHero = 0;
+let intHeroLevel = 0;
+
+let mostAssist = "";
+let cAssist = 0;
+
+let worstRatio = "";
+let cRatio = 1000;
+for(let i=0;i<hero.length;i++){
+  let chero = hero[i];
+  total += chero.networth;
+  if(chero.primary_attribute === "intelligent"){
+    intHero++;
+    intHeroLevel += chero.level;
+  }
+  if(chero.assist > cAssist){
+    cAssist = chero.assist;
+    mostAssist = chero.name;
+  }
+  if(chero.death > 0 && chero.kill/chero.death < cRatio){
+    cRatio = chero.kill/chero.death;
+    worstRatio = chero.name;
+  }
+}
+console.log("Average networth : "+total/hero.length);
+console.log("Average level of intelligent hero : "+intHeroLevel/intHero);
+console.log("Most assist : "+mostAssist);
+console.log("Worst kill/death ratio : "+worstRatio);
 ```
 
 ## Simple Web Application: A joke from Chuck Norris.
