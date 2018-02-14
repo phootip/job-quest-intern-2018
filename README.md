@@ -90,7 +90,7 @@ This part of quest will be a challenging one. You are going to make a simple web
 ## Questions
 Q1: What is GraphQL and how it is different from REST API?
 
-A1: <insert your answer here>
+A1: GraphQL is 
 
 
 Q2: Please explain how javascript benefits from cross-platform development
