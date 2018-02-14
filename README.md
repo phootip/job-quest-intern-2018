@@ -90,16 +90,16 @@ This part of quest will be a challenging one. You are going to make a simple web
 ## Questions
 Q1: What is GraphQL and how it is different from REST API?
 
-A1: GraphQL is 
+A1: GraphQL is a query tool which can control structure of queried object as well as the amount of object. Compare to REST API, GraphQL gives more option to client designing object themselves while REST API limit their structure and function to what they have.
 
 
 Q2: Please explain how javascript benefits from cross-platform development
 
-A2: <insert your answer here>
+A2: Javascript run on browser that means every technology that use browser can also use javascript. So application developed by javascript can be run on almost every tools we have.
 
 Q3: What do you expect to get from during an internship at TakeMeTour?
 
-A3: <insert your answer here>
+A3: I want to polish my skill in javascript and many thing that I haven't learned (E.g. functional language, block chain, machine learning). I want to learn things hard to find in University.
 
 ## Submitting
 
